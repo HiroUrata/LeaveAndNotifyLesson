@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40297D13A262AFF99AD2AB6F /* Pods_LeaveAndNotifyLesson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529952DC509C44A90791577B /* Pods_LeaveAndNotifyLesson.framework */; };
 		546D8835274E689000ED00BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8834274E689000ED00BC /* AppDelegate.swift */; };
 		546D8837274E689000ED00BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8836274E689000ED00BC /* SceneDelegate.swift */; };
 		546D8839274E689000ED00BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8838274E689000ED00BC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		529952DC509C44A90791577B /* Pods_LeaveAndNotifyLesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaveAndNotifyLesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D8831274E689000ED00BC /* LeaveAndNotifyLesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaveAndNotifyLesson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D8834274E689000ED00BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546D8836274E689000ED00BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		546D883D274E689300ED00BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546D8840274E689300ED00BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546D8842274E689300ED00BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF667D74069E8C93B7B87F65 /* Pods-LeaveAndNotifyLesson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaveAndNotifyLesson.release.xcconfig"; path = "Target Support Files/Pods-LeaveAndNotifyLesson/Pods-LeaveAndNotifyLesson.release.xcconfig"; sourceTree = "<group>"; };
+		FDA93DB0CF7475C40BE8E44D /* Pods-LeaveAndNotifyLesson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaveAndNotifyLesson.debug.xcconfig"; path = "Target Support Files/Pods-LeaveAndNotifyLesson/Pods-LeaveAndNotifyLesson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40297D13A262AFF99AD2AB6F /* Pods_LeaveAndNotifyLesson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				546D8833274E689000ED00BC /* LeaveAndNotifyLesson */,
 				546D8832274E689000ED00BC /* Products */,
+				BA8F5528F386C7E34BDE1942 /* Pods */,
+				A8DFD866FAD951E0A3D1FDD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = LeaveAndNotifyLesson;
 			sourceTree = "<group>";
 		};
+		A8DFD866FAD951E0A3D1FDD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				529952DC509C44A90791577B /* Pods_LeaveAndNotifyLesson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA8F5528F386C7E34BDE1942 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDA93DB0CF7475C40BE8E44D /* Pods-LeaveAndNotifyLesson.debug.xcconfig */,
+				CF667D74069E8C93B7B87F65 /* Pods-LeaveAndNotifyLesson.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546D8845274E689300ED00BC /* Build configuration list for PBXNativeTarget "LeaveAndNotifyLesson" */;
 			buildPhases = (
+				7C932E5A472AB22415852B56 /* [CP] Check Pods Manifest.lock */,
 				546D882D274E689000ED00BC /* Sources */,
 				546D882E274E689000ED00BC /* Frameworks */,
 				546D882F274E689000ED00BC /* Resources */,
+				AD64CF3DA08D51120A9200A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C932E5A472AB22415852B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeaveAndNotifyLesson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD64CF3DA08D51120A9200A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeaveAndNotifyLesson/Pods-LeaveAndNotifyLesson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeaveAndNotifyLesson/Pods-LeaveAndNotifyLesson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeaveAndNotifyLesson/Pods-LeaveAndNotifyLesson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		546D882D274E689000ED00BC /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		546D8846274E689300ED00BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA93DB0CF7475C40BE8E44D /* Pods-LeaveAndNotifyLesson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,12 +376,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		546D8847274E689300ED00BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF667D74069E8C93B7B87F65 /* Pods-LeaveAndNotifyLesson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +393,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
